@@ -1,0 +1,12 @@
+E:\github\auto-updater\VS Project\Launcher v2\bin\Release\Launcher v2.exe.config
+E:\github\auto-updater\VS Project\Launcher v2\bin\Release\Launcher v2.exe
+E:\github\auto-updater\VS Project\Launcher v2\bin\Release\Launcher v2.pdb
+E:\github\auto-updater\VS Project\Launcher v2\bin\Release\Ionic.Zip.dll
+E:\github\auto-updater\VS Project\Launcher v2\obj\Release\Launcher v2.csproj.SuggestedBindingRedirects.cache
+E:\github\auto-updater\VS Project\Launcher v2\obj\Release\Launcher_v2.Form1.resources
+E:\github\auto-updater\VS Project\Launcher v2\obj\Release\Launcher_v2.Properties.Resources.resources
+E:\github\auto-updater\VS Project\Launcher v2\obj\Release\Launcher v2.csproj.GenerateResource.cache
+E:\github\auto-updater\VS Project\Launcher v2\obj\Release\Launcher v2.csproj.CoreCompileInputs.cache
+E:\github\auto-updater\VS Project\Launcher v2\obj\Release\Launcher v2.csproj.CopyComplete
+E:\github\auto-updater\VS Project\Launcher v2\obj\Release\Launcher v2.exe
+E:\github\auto-updater\VS Project\Launcher v2\obj\Release\Launcher v2.pdb

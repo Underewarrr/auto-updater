@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "6b220888-a64e-45a5-b00f-60bbc632b209": {
+      "ProjectGuid": "6b220888-a64e-45a5-b00f-60bbc632b209",
+      "DisplayName": "Launcher v2",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
