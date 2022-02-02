@@ -37,7 +37,7 @@ Now let's search for:
 ![image](https://user-images.githubusercontent.com/74227915/152198991-5210bd69-f39f-4244-898a-a147fbd5b68a.png)
 
 In Visual Studio, select the WebBrowser control (In this case, name it "patchNotes") and change the url from `http://127.0.0.1/` to the path of the `index.html` file, in the host folder:
-`Example : https://myweb.com/news and it will render in app`
+`Example : https://myweb.com/news` and it will render in app
 ![image](https://user-images.githubusercontent.com/74227915/152199363-36a3c2cf-b0d0-4c50-b707-9a0aa692c375.png)
 
 NOTE: This is optional, it's just a template in .html. You can remove it and edit it however you want.
