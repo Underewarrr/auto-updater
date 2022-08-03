@@ -30,7 +30,7 @@ Agora vamos pesquisar:
 `Process.Start("game.exe", "\\game");`
 
 • Essa função recebe 2 argumentos, nome do executavel e caminho.
- - (altere sem remover o \\)
+ - (altere sem remover o \ \)
 
 ![image](https://user-images.githubusercontent.com/74227915/182524283-c8c38477-79de-43ef-a914-6eab2f0add7f.png)
 
