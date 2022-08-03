@@ -1,5 +1,39 @@
+*.swp
+*.*~
+project.lock.json
+.DS_Store
+*.pyc
+nupkg/
 
-*.lock
-.vs/Launcher v2/FileContentIndex/f989712f-054a-452d-b4b8-024b9482149c.vsidx
-.vs/Launcher v2/
+# Visual Studio Code
+.vscode
+
+# Rider
+.idea
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+build/
+bld/
+[Bb]in/
+[Oo]bj/
+[Oo]ut/
+msbuild.log
+msbuild.err
+msbuild.wrn
+
+# Visual Studio 2015
 .vs/
+.vs/Launcher v2/v17/.suo
+Launcher v2/bin/Release/Launcher v2.exe

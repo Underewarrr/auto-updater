@@ -217,10 +217,10 @@ namespace Launcher_v2
         }
 
 
-        //Starts the game
+        //Button Enable || Clicl Enable
         private void strtGameBtn_Click(object sender, EventArgs e)
         {
-            Process.Start("game.exe", "\\game");
+            Process.Start("game.exe", "\\myLauncher/mygame");
             this.Close();
         }
 
