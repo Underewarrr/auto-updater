@@ -34,10 +34,12 @@ Agora vamos pesquisar:
 
 ![image](https://user-images.githubusercontent.com/74227915/182524283-c8c38477-79de-43ef-a914-6eab2f0add7f.png)
 
-No Visual Studio, selecione o controle WebBrowser (neste caso, nomeie-o como "patchNotes") e altere a url de `http://localhost/` para o caminho do arquivo `index.html`, na pasta do seu servidor que deseja atualizar. È possivel configurar uma pagina web.
-`Exemplo: https://myweb.com/news` e será renderizado no aplicativo
+No Visual Studio, selecione o controle WebBrowser (neste caso, nomeie-o como "patchNotes") e altere a url de `http://localhost/` para o caminho do arquivo `index.html`, na pasta do seu servidor que deseja atualizar.
 
 ![image](https://user-images.githubusercontent.com/74227915/182524608-2d9279c4-464f-4d69-8767-b8fc6a912c09.png)
+
+ È possivel configurar uma pagina web.
+`Exemplo: https://myweb.com/news` e será renderizado no aplicativo
 
 ![image](https://user-images.githubusercontent.com/74227915/182659322-e36e152f-2d31-4907-8160-2cc4a94d2dc4.png)
 
