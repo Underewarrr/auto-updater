@@ -100,7 +100,7 @@ namespace Launcher_v2
         private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
         {
             //Defines the server's update directory
-            string Server = "http://127.0.0.1/Updates/";
+            string Server = "http://localhost/Updates/";
 
             //Defines application root
             string Root = AppDomain.CurrentDomain.BaseDirectory;
@@ -140,9 +140,9 @@ namespace Launcher_v2
                 decimal serverVersion = decimal.Parse(version);
 
 
-                string sUrlToReadFileFrom = Server + file;
+                string sUrlToReadFileFrom = Server + file; // path to compare
 
-                string sFilePathToWriteFileTo = Root + file;
+                string sFilePathToWriteFileTo = Root + file; // path to update
 
                 if (serverVersion > localVersion)
                 {
@@ -206,21 +206,21 @@ namespace Launcher_v2
         {
             progressBar1.Value = e.ProgressPercentage;
             downloadLbl.ForeColor = System.Drawing.Color.Silver;
-            downloadLbl.Text = "Baixando Atualizações";
+            downloadLbl.Text = "Aguarde baixando atualizações";
         }
 
         private void backgroundWorker1_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
             strtGameBtn.Enabled = true;
             this.downloadLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(121)))), ((int)(((byte)(203)))));
-            downloadLbl.Text = "Client Atualizado !";
+            downloadLbl.Text = "O jogo foi atualizado com sucesso";
         }
 
 
         //Starts the game
         private void strtGameBtn_Click(object sender, EventArgs e)
         {
-            Process.Start("pokedash_OpenGL.exe", "\\Pokemon Online");
+            Process.Start("game.exe", "\\game");
             this.Close();
         }
 
