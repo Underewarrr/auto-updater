@@ -59,7 +59,7 @@ Como no exemplo do arquivo, colocamos o arquivo de atualização em .zip nessa m
 
 ## oque ainda é necessario fazer manualmente
 Compactar o arquivo de atualização em ZIP e colocar na pasta.
-Atualizar o arquivo HTML para liberar atualização para o client.
+Atualizar o arquivo HTML para liberar as atualizações para os clientes.
 - Como melhorar 
 
 Interface te atualização no servidor para alterar o arquivo.
