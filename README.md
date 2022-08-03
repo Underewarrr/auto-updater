@@ -18,7 +18,7 @@
  
 • Abra o arquivo .sln na pasta "VS Project" com o Visual Studio:
  
-Configure o sevidor de atualiazção onde os arquivos devem ser subistituidos.
+Configure o sevidor de atualiazção onde os arquivos de log devem ser subistituidos.
 
 `string Server = "http://localhost/Updates/";`
 
