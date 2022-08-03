@@ -39,6 +39,8 @@ No Visual Studio, selecione o controle WebBrowser (neste caso, nomeie-o como "pa
 
 ![image](https://user-images.githubusercontent.com/74227915/182524608-2d9279c4-464f-4d69-8767-b8fc6a912c09.png)
 
+![image](https://user-images.githubusercontent.com/74227915/182659322-e36e152f-2d31-4907-8160-2cc4a94d2dc4.png)
+
 NOTA: Este template padrão é para mostrar a ferramentas e suas features.
 Todos os arquivos .tml Você pode removê-los e ou editá-los como quiser.
 • Agora compile sua solução "Launcher\VS Project\Launcher v2\bin\Debug or Release" 
