@@ -1,6 +1,6 @@
 ﻿namespace Launcher_v2
 {
-    partial class Form1
+    partial class AutoUpdater
     {
         /// <summary>
         /// Required designer variable.

@@ -15,7 +15,7 @@ using Ionic.Zip;
 
 namespace Launcher_v2
 {
-    public partial class Form1 : Form
+    public partial class AutoUpdater : Form
     {
 
         public const int WM_NCLBUTTONDOWN = 0xA1;
@@ -27,7 +27,7 @@ namespace Launcher_v2
         [DllImportAttribute("user32.dll")]
         public static extern bool ReleaseCapture();
 
-        public Form1()
+        public AutoUpdater()
         {
             InitializeComponent();
 
