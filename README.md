@@ -1,54 +1,64 @@
-# Configuration
-## Aplication
-### What it does:
-• Checks the existence of the local version in the client's folder;
+# Configuração
+## Lembre-se de utilizar o dotnet 4.8!
+## Aplicação
+### O que faz:
+• Verifica a existência da versão local na pasta do cliente;
  
-• If the file version does not exist, it assumes the version is "1.0" and creates a version file;
+• Se a versão do arquivo não existir, assume que a versão é "1.0" e cria um arquivo de versionamento.
  
-• Check .xml file on the update server;
+• Verifica um arquivo xml no servidor de autenticação.
  
-• Download updates for all versions greater than the current version of the client (updates everything in .zip file format only);
+• Baixe atualizações para todas as versões superiores à versão atual do cliente com base em um log de atualizações na pasta local.
  
-• Extract the .zip files;
+• Arquivar a versão atualizada na pasta do cliente;
  
-• Deletes .zip files after extraction;
+• Ao final da atualização o botão deve ser liberado.
+
+### Como Configurar:
  
-• Archive the updated version in the client's folder;
+• Abra o arquivo .sln na pasta "VS Project" com o Visual Studio:
  
-• And finally unlocks the "Start Game" button.
+Configure o sevidor de atualiazção onde os arquivos devem ser subistituidos.
 
-### How to edit:
+`string Server = "http://localhost/Updates/";`
+
+• Altere para qualquer URL em que você esteja hospedando as atualizações.
+
+![image](https://user-images.githubusercontent.com/74227915/182523674-736acd90-91d4-4acd-a06c-abfc204aa800.png)
+
+Agora vamos pesquisar:
+`Process.Start("game.exe", "\\game");`
+
+• Essa função recebe 2 argumentos, nome do executavel e caminho.
+ - (altere sem remover o "\\")
+
+![image](https://user-images.githubusercontent.com/74227915/182524283-c8c38477-79de-43ef-a914-6eab2f0add7f.png)
+
+No Visual Studio, selecione o controle WebBrowser (neste caso, nomeie-o como "patchNotes") e altere a url de `http://localhost/` para o caminho do arquivo `index.html`, na pasta do seu servidor que deseja atualizar. È possivel configurar uma pagina web.
+`Exemplo: https://myweb.com/news` e será renderizado no aplicativo
+
+![image](https://user-images.githubusercontent.com/74227915/182524608-2d9279c4-464f-4d69-8767-b8fc6a912c09.png)
+
+NOTA: Este template padrão é para mostrar a ferramentas e suas features.
+Todos os arquivos .tml Você pode removê-los e ou editá-los como quiser.
+• Agora compile sua solução "Launcher\VS Project\Launcher v2\bin\Debug or Release" 
+• Solução compilada coloque o exe e as dlls na pasta do de onde deseja atualizar e inicie a aplicação.
+
+## Como funciona as atualizações na rede
+
+• No servidor do site, após colar a pasta /Updates,Temos um arquivo Updates.xml, para cada atualização adicionamos um `<update> e fechamos com </update>`.
+Como no exemplo do arquivo, colocamos o arquivo de atualização em .zip nessa mesma pasta, editando a versão e o nome no arquivo:
+
+• No arquivo version.txt colocamos a versão da nova atualização:
  
-• Open the .sln file in the "VS Project" folder with Visual Studio:
- 
-Search for:
+• Uma dica para atualizar o .zip é colocar em pastas o caminho do cliente que você deseja atualizar. Exemplo: `assets/textures/world` nesta pasta vamos colocar os arquivos que serão substituídos, no exemplo era Tibia.spr e .dat, estes arquivos são arquivos de sprites!
 
-`string Server = "http://127.0.0.1/Updates/";`
+## oque ainda é necessario fazer manualmente
+Compactar o arquivo de atualização em ZIP e colocar na pasta.
+Atualizar o arquivo HTML para liberar atualização para o client.
+- Como melhorar 
 
-• Change http://127.0.0.1/Updates/ to whatever URL you will be hosting your updates.
-![image](https://user-images.githubusercontent.com/74227915/152198277-15177643-813f-458f-b661-51f31e72eb9c.png)
+Interface te atualização no servidor para alterar o arquivo.
 
-Now let's search for:
-`Process.Start("PROCESS_NAME.exe", "\\PROCESS_NAME");`
-
-• Modify the PROCESS_NAME.exe by the name of your exe.
- 
-• \\PROCESS_NAME and the folder that is your PROCESS_NAME.exe and will be your Launcher. (change without removing the "\\")
-![image](https://user-images.githubusercontent.com/74227915/152198991-5210bd69-f39f-4244-898a-a147fbd5b68a.png)
-
-In Visual Studio, select the WebBrowser control (In this case, name it "patchNotes") and change the url from `http://127.0.0.1/` to the path of the `index.html` file, in the host folder:
-`Example : https://myweb.com/news` and it will render in app
-![image](https://user-images.githubusercontent.com/74227915/152199363-36a3c2cf-b0d0-4c50-b707-9a0aa692c375.png)
-
-NOTE: This is optional, it's just a template in .html. You can remove it and edit it however you want.
-• Now just throw the .exe, .dll and the version file from the folder "Launcher\VS Project\Launcher v2\bin\Debug or Release" to your Client folder:
-
-## Website
-
-• On the site's host, after pasting the Updates folder, we edit the Updates.xml file, for each update we add an `<update> and close it with </update>` as in the example of the file. We put the update file in .zip in that same folder, editing the version and name in the file:
-
-• In the file version.txt we put the version of the new update:
- 
-• A tip for the update .zip is to put in folders the path on the client you want to update. Example: data/things/854 in this folder we will place the files that will be replaced, in the example it was Tibia.spr and .dat. Then we compress it and leave it in the Updates folder, without forgetting to put the name in the Updates.xml file.
-
-When you open the file it will update, release the "Start Game" button, and when you click it will close the Launcher and open the Client.
+### Ao final
+Ao abrir o aplicativo ele ira atualizar as referencias, quando o download for finalizado ira liberar o botão.
