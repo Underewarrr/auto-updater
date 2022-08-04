@@ -1,4 +1,6 @@
 # Configuração
+![image](https://user-images.githubusercontent.com/74227915/182894807-44c5c5db-6741-463c-b79b-391fe5edc56e.png)
+
 ## Lembre-se de utilizar o dotnet 4.8!
 ## Aplicação
 ### O que faz:
