@@ -65,7 +65,7 @@ Compactar o arquivo de atualização em ZIP e colocar na pasta.
 Atualizar o arquivo HTML para liberar as atualizações para os clientes.
 - Como melhorar 
 
-Interface te atualização no servidor para alterar o arquivo.
+Interface de atualização via web server no servidor.
 
 ### Ao final
-Ao abrir o aplicativo ele ira atualizar as referencias, quando o download for finalizado ira liberar o botão.
+Ao abrir o aplicativo ele ira atualizar as referencias, quando o download for finalizado ira liberar o usuario a clicar em start game.
